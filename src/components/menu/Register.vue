@@ -1,18 +1,18 @@
 <template>
    <el-form :model="registerForm" :rules="rules" ref="registerForm" label-width="100px" class="demo-ruleForm">
-  <el-form-item label="昵称" prop="nickName" style="width:450px;margin-left:60px" >
+  <el-form-item label="昵称" prop="nickName" style="width:450px;margin-left:350px" >
     <el-input v-model="registerForm.nickName" placeholder="请输入昵称"></el-input>
   </el-form-item>
-   <el-form-item label="真实姓名" prop="trueName" style="width:450px;margin-left:60px">
+   <el-form-item label="真实姓名" prop="trueName" style="width:450px;margin-left:350px">
     <el-input v-model="registerForm.trueName" placeholder="请输入真实姓名"></el-input>
   </el-form-item>
-  <el-form-item label="性别" prop="sex" style="width:450px;margin-left:60px" >
+  <el-form-item label="性别" prop="sex" style="width:450px;margin-left:350px" >
     <div id="el-form-item_content">
      <el-radio v-model="registerForm.sex" label="1" >男</el-radio>
      <el-radio v-model="registerForm.sex" label="2" >女</el-radio>
     </div>
   </el-form-item>
-  <el-form-item label="用户头像" prop="face" style="width:450px;margin-left:60px">
+  <el-form-item label="用户头像" prop="face" style="width:450px;margin-left:350px">
       <el-upload v-model="registerForm.face"
         class="avatar-uploader"
         action="https://jsonplaceholder.typicode.com/posts/"
@@ -23,20 +23,21 @@
         <i v-else class="el-icon-plus avatar-uploader-icon"></i>
       </el-upload>
   </el-form-item>
-  <el-form-item label="登录密码" prop="password" style="width:450px;margin-left:60px">
+  <el-form-item label="登录密码" prop="password" style="width:450px;margin-left:350px">
     <el-input v-model="registerForm.password" placeholder="请输入登录密码"></el-input>
   </el-form-item>
-  <el-form-item label="确认密码" prop="checkPassword" style="width:450px;margin-left:60px">
+  <el-form-item label="确认密码" prop="checkPassword" style="width:450px;margin-left:350px">
     <el-input v-model="registerForm.checkPassword" placeholder="请再次输入密码"></el-input>
   </el-form-item>
-  <el-form-item label="联系电话" prop="mobile" style="width:450px;margin-left:60px">
+  <el-form-item label="联系电话" prop="mobile" style="width:450px;margin-left:350px">
     <el-input v-model="registerForm.mobile" placeholder="请输入联系电话"></el-input>
   </el-form-item>
-  <el-form-item label="电子邮箱" prop="email" style="width:450px;margin-left:60px">
+  <el-form-item label="电子邮箱" prop="email" style="width:450px;margin-left:350px">
     <el-input v-model="registerForm.email" placeholder="请输入邮箱地址"></el-input>
   </el-form-item>
   <el-form-item>
-    <el-button type="primary" @click="submitForm('registerForm')" style="margin-left:-400px">注册</el-button>
+    <el-button type="primary" @click="submitForm('registerForm')" style="margin-left:-250px">注册</el-button>
+     <el-button @click="resetForm('registerForm')" >重置</el-button>
   </el-form-item>
 </el-form>
 </template>
@@ -141,12 +142,12 @@ export default {
     display: block;
   }
   .demo-ruleForm{
-    width: 900px;
+    width: 1200px;
+    height: 800px;
     text-align: center;
-    margin-right:auto;
-    margin-left:300px; 
     padding-top: 30px;
     background-image:url(../../../static/image/login/3.jpg);
+    background-size: 1200px 800px;
     background-repeat: repeat-y;
 }
 #el-form-item_content{

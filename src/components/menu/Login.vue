@@ -1,13 +1,13 @@
 <template>
 <div >
   <el-form :model="loginForm" :rules="rules" ref="loginForm" label-width="100px" class="demo-ruleForm" >
-    <el-form-item label="用户名" prop="nickName" style="margin-left:50px">
+    <el-form-item label="用户名" prop="nickName" style="margin-left:350px">
       <el-input v-model="loginForm.nickName"   placeholder="请输入用户名"  style="width:300px;float:left"></el-input>
     </el-form-item>
-    <el-form-item label="密码" prop="password" style="margin-left:50px" >
+    <el-form-item label="密码" prop="password" style="margin-left:350px" >
       <el-input v-model="loginForm.password"   placeholder="请输入密码" style="width:300px;float:left"></el-input>
     </el-form-item>
-     <el-form-item label="确认密码" prop="checkPassword"  style="margin-left:50px">
+     <el-form-item label="确认密码" prop="checkPassword"  style="margin-left:350px">
       <el-input v-model="loginForm.checkPassword"   placeholder="请再次输入密码" style="width:300px;float:left"></el-input>
     </el-form-item>
   <el-form-item class="login">
@@ -94,15 +94,15 @@
 </script>
 <style>
 .demo-ruleForm{
-      width: 600px;
-      height: 400px;
+      width: 1200px;
+      height: 300px;
       margin-right:auto;
       margin-left:auto; 
       padding-top: 40px;
       background-image:url(../../../static/image/login/3.jpg);
-      background-repeat:no-repeat;
+      background-size:1200px 300px;
 }
 .login{
-  margin-left: 90px;
+  margin-left: 350px;
 }
 </style>
